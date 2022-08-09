@@ -1,0 +1,84 @@
+body {
+    background-color: #333;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #04AA6D;
+    padding: 50px;
+    font-size: 40px;
+}
+
+#indpara {
+    color: bisque
+}
+
+#quizpara{
+    color: bisque;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+h3 {
+    color: rgb(195, 214, 141);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(195, 214, 141);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#EYtitle {
+    background-color: #333;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+#img1 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+p {
+    background-color: #333;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+div {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: #04AA6D;
+    border: 0;
+}

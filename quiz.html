@@ -2,9 +2,11 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title> Visit East Yorkshire</title>
 </head>
 
@@ -31,15 +33,20 @@
     </p>
 
     <div>
-        <label>
-            Indoors
-            <input type="radio" name="where" onclick="setWhere('indoor')">
-        </label>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                Indoors
+                <input type="radio" name="where" onclick="setWhere('indoor')" class="form-check-input">
+            </label>
+        </div>
 
-        <label>
-            <input type="radio" name="where" onclick="setWhere('outdoor')">
-            Outdoors
-        </label>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" name="where" onclick="setWhere('outdoor')" class="form-check-input" id="">
+                Outdoors
+            </label>
+        </div>
+
         <!-- label allows the user to click the word and still click the button -->
         <hr>
         <p>
@@ -47,14 +54,19 @@
         </p>
 
         <div>
-            <label>
-                Not at all
-                <input type="radio" name="walking" onclick="setWalking(false)">
-            </label>
-            <label>
-                <input type="radio" name="walking" onclick="setWalking(true)">
-                I love it
-            </label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    Not at all
+                    <input type="radio" name="walking" onclick="setWalking(false)" class="form-check-input" id="">
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" name="walking" onclick="setWalking(true)" class="form-check-input" id="">
+                    I love it
+                </label>
+            </div>
+
         </div>
         <hr>
         <p>
@@ -62,14 +74,18 @@
         </p>
 
         <div>
-            <label>
-                Please no
-                <input type="radio" name="history" onclick="setHistory(false)">
-            </label>
-            <label>
-                <input type="radio" name="history" onclick="setHistory(true)">
-                I'm obsessed!
-            </label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    Please no
+                    <input type="radio" name="history" onclick="setHistory(false)" class="form-check-input" id="">
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" name="history" onclick="setHistory(true)" class="form-check-input" id="">
+                    I'm obsessed!
+                </label>
+            </div>
         </div>
         <hr>
 
@@ -78,14 +94,20 @@
         </p>
 
         <div>
-            <label>
-                Dry for me
-                <input type="radio" name="water" onclick="setWater(false)">
-            </label>
-            <label>
-                <input type="radio" name="water" onclick="setWater(true)">
-                Wet 'n' Wild
-            </label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    Dry for me
+                    <input type="radio" name="water" onclick="setWater(false)" class="form-check-input" id="">
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" name="water" onclick="setWater(true)" class="form-check-input">
+                    Wet 'n' Wild
+                </label>
+            </div>
+
         </div>
         <hr>
 
@@ -94,18 +116,23 @@
         </p>
 
         <div>
-            <label>
-                I'm not really bothered
-                <input type="radio" name="animals" onclick="setAnimals(false)">
-            </label>
-            <label>
-                <input type="radio" name="animals" onclick="setAnimals(true)">
-                I love animals!
-            </label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    I'm not really bothered
+                    <input type="radio" name="animals" onclick="setAnimals(false)" class="form-check-input">
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" name="animals" onclick="setAnimals(true)" class="form-check-input">
+                    I love animals!
+                </label>
+            </div>
         </div>
         <br>
         <hr>
-        <button onclick="results()">Show me my results</button>
+        <button class="btn btn-secondary" onclick="results()">Show me my results</button>
 
 
 

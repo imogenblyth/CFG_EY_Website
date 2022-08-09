@@ -30,12 +30,19 @@ function suggest(place) {
 //redirect results to the relevant webpage dependent on answers from quiz
 
 function results() {
+    
+    if (where === null || walking === null || history === null || water === null || animals === null) {
+        alert(`Please complete the quiz`);
+        return;
+    }
+
     alert(`You have chosen the following:
     Where: ${where}
     Walking: ${walking}
     History: ${history}
     Water: ${water}
     Sand: ${animals}`);
+
 
     if (where === 'indoor' && walking === false && history === false && water === false && animals === false) {
         suggest('https://www.john-bull.com/')

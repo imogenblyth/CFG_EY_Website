@@ -18,163 +18,155 @@
         <a href="places.html">Places</a>
     </div>
     <h1> Where should you visit?</h1>
-
-    <p id="quizpara">
-        East Riding of Yorkshire has a plethora of places to visit, each as unique as the next.
+<div class="container">
+        <p id="quizpara">
+            East Riding of Yorkshire has a plethora of places to visit, each as unique as the next.
+            <br>
+            Whether you enjoy walks in the country, visiting wildlife or a wet and wild time, this quiz will lead you to the
+            perfect day out.
+        </p>
         <br>
-        Whether you enjoy walks in the country, visiting wildlife or a wet and wild time, this quiz will lead you to the
-        perfect day out.
-    </p>
-    <br>
 
-    <hr>
-    <p>
-        Where do you like to spend your time?
-    </p>
+        <div class="row justify-content-center">
+            <div class="col-8">
+        
+                <div class="question">
+                    <p>
+                        Where do you like to spend your time?
+                    </p>
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <div class="form-check form-check-inline form-check-reverse">
+                                <label class="form-check-label">
+                                    Indoors
+                                    <input type="radio" name="where" onclick="setWhere('indoor')" class="form-check-input">
+                                </label>
+                            </div>
+                        </div>
 
-    <div>
-        <div class="row">
-            <div class="col-6 text-end">
-                <div class="form-check form-check-inline form-check-reverse">
-                    <label class="form-check-label">
-                        Indoors
-                        <input type="radio" name="where" onclick="setWhere('indoor')" class="form-check-input">
-                    </label>
+                        <div class="col-6 text-start">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" name="where" onclick="setWhere('outdoor')" class="form-check-input" id="">
+                                    Outdoors
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <!-- label allows the user to click the word and still click the button -->
+                
+                <div class="question">
+                    <p>
+                        How much do you like walking?
+                    </p>
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <div class="form-check form-check-inline form-check-reverse">
+                                <label class="form-check-label">
+                                    Not at all
+                                    <input type="radio" name="walking" onclick="setWalking(false)" class="form-check-input" id="">
+                                </label>
+                            </div>
+                        </div>
 
-            <div class="col-6 text-start">
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" name="where" onclick="setWhere('outdoor')" class="form-check-input" id="">
-                        Outdoors
-                    </label>
+
+
+                        <div class="col-6 text-start">
+                            <div class=" form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" name="walking" onclick="setWalking(true)" class="form-check-input" id="">
+                                    I love it
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- label allows the user to click the word and still click the button -->
-    <hr>
-    <p>
-        How much do you like walking?
-    </p>
+                
+                <div class="question">
+                    <p>
+                        Do you like to learn about history?
+                    </p>
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <div class="form-check form-check-inline form-check-reverse">
+                                <label class="form-check-label">
+                                    Please no
+                                    <input type="radio" name="history" onclick="setHistory(false)" class="form-check-input" id="">
+                                </label>
+                            </div>
+                        </div>
 
-    <div>
-        <div class="row">
-            <div class="col-6 text-end">
-                <div class="form-check form-check-inline form-check-reverse">
-                    <label class="form-check-label">
-                        Not at all
-                        <input type="radio" name="walking" onclick="setWalking(false)" class="form-check-input" id="">
-                    </label>
+
+                        <div class="col-6 text-start">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" name="history" onclick="setHistory(true)" class="form-check-input" id="">
+                                    I'm obsessed!
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="question">
+                    <p>
+                        How do you feel about water?
+                    </p>
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <div class="form-check form-check-inline form-check-reverse">
+                                <label class="form-check-label">
+                                    Dry for me
+                                    <input type="radio" name="water" onclick="setWater(false)" class="form-check-input" id="">
+                                </label>
+                            </div>
+                        </div>
 
+                        <div class="col-6 text-start">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" name="water" onclick="setWater(true)" class="form-check-input">
+                                    Wet 'n' Wild
+                                </label>
+                            </div>
+                        </div>
+                    </div>
 
-
-            <div class="col-6 text-start">
-                <div class=" form-check form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" name="walking" onclick="setWalking(true)" class="form-check-input" id="">
-                        I love it
-                    </label>
                 </div>
-            </div>
-        </div>
+                
+                <div class="question">
+                    <p>
+                        Do you want to see some animals?
+                    </p>
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <div class="form-check form-check-inline form-check-reverse">
+                                <label class="form-check-label">
+                                    Happy without
+                                    <input type="radio" name="animals" onclick="setAnimals(false)" class="form-check-input">
+                                </label>
+                            </div>
+                        </div>
 
-    </div>
-    <hr>
-    <p>
-        Do you like to learn about history?
-    </p>
+                        <div class="col-6 text-start">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" name="animals" onclick="setAnimals(true)" class="form-check-input">
+                                    I love animals!
+                                </label>
+                            </div>
+                        </div>
+                    </div>
 
-    <div>
-        <div class="row">
-            <div class="col-6 text-end">
-                <div class="form-check form-check-inline form-check-reverse">
-                    <label class="form-check-label">
-                        Please no
-                        <input type="radio" name="history" onclick="setHistory(false)" class="form-check-input" id="">
-                    </label>
                 </div>
+                <br>
+
+                <button class="btn btn-secondary" onclick="results()">Show me my results</button>
             </div>
-
-
-            <div class="col-6 text-start">
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" name="history" onclick="setHistory(true)" class="form-check-input" id="">
-                        I'm obsessed!
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <hr>
-
-    <p>
-        How do you feel about water?
-    </p>
-
-    <div>
-        <div class="row">
-            <div class="col-6 text-end">
-                <div class="form-check form-check-inline form-check-reverse">
-                    <label class="form-check-label">
-                        Dry for me
-                        <input type="radio" name="water" onclick="setWater(false)" class="form-check-input" id="">
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-6 text-start">
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" name="water" onclick="setWater(true)" class="form-check-input">
-                        Wet 'n' Wild
-                    </label>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <hr>
-
-    <p>
-        Do you want to see some animals?
-    </p>
-
-    <div>
-        <div class="row">
-            <div class="col-6 text-end">
-                <div class="form-check form-check-inline form-check-reverse">
-                    <label class="form-check-label">
-                        Happy without
-                        <input type="radio" name="animals" onclick="setAnimals(false)" class="form-check-input">
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-6 text-start">
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" name="animals" onclick="setAnimals(true)" class="form-check-input">
-                        I love animals!
-                    </label>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <br>
-    <hr>
-    <button class="btn btn-secondary" onclick="results()">Show me my results</button>
-
-
-
-
+        </div>        
+</div>
 </body>
 
 </html>

@@ -82,3 +82,21 @@ hr {
     background-color: #04AA6D;
     border: 0;
 }
+
+.image-text-hover {
+text-align:left;
+}
+
+.image-text-hover p {
+    visibility:hidden;
+    text-align:left;
+
+}
+.image-text-hover:hover p {
+    visibility:visible
+}
+
+h3{
+    padding-bottom: 10px;
+}
+
